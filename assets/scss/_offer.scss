@@ -1,0 +1,66 @@
+$noto: "Noto Sans", sans-serif;
+$mt: "Montserrat", sans-serif;
+.offer {
+  padding-bottom: 74px;
+  // info
+  &__info {
+    margin-top: 143px;
+    margin-right: 180px;
+    // botttom info
+    &-bottom {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 88px;
+    }
+  }
+  // title
+  &__title {
+    span {
+      display: block;
+    }
+  }
+  // slash
+  &__slash {
+    width: 4px;
+    height: 140px;
+    background-color: #fff;
+    position: relative;
+    transform: rotate(30deg);
+    margin-right: 51px;
+    &::before {
+      content: "";
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      position: absolute;
+      background: rgba(96, 92, 234, 0.5);
+      filter: blur(40px);
+      top: -20px;
+      left: -66px;
+    }
+  }
+  // text
+  &__text {
+    width: 380px;
+    height: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  // img
+  &__img {
+    width: 322px;
+    height: 668px;
+    &-wrap {
+      position: relative;
+    /*   &::before {
+        background-image: url("../img/offer/phone_bg.png");
+        background-size: 662px 783px;
+        position: absolute;
+        width: 662px;
+        height: 783px;
+      } */
+    }
+  }
+}

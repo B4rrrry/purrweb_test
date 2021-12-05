@@ -1,0 +1,46 @@
+$noto: "Noto Sans", sans-serif;
+$mt: "Montserrat", sans-serif;
+.header {
+  padding-top: 23px;
+  padding-bottom: 18px;
+  // wrap 
+  &__wrap {
+    align-items: center;
+  }
+  // logo
+  .logo {
+    &__wrap {
+      margin-right: 146px;
+    }
+    // img
+    &__img {
+      width: 107px;
+      height: 109px;
+      margin-right: 8px;
+    }
+    // link
+    &__link {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  // login
+  .login {
+    // img
+    &__img {
+      width: 26px;
+      height: 25px;
+      margin-right: 12px;
+    }
+    // link
+    &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      text-decoration-line: underline;
+    }
+  }
+}

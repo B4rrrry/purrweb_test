@@ -1,0 +1,126 @@
+.tool {
+  padding-bottom: 218px;
+  &__wrap {
+  }
+  // info
+  &__info {
+    margin-top: 90px;
+    margin-right: 25px;
+  }
+  &__title {
+    margin-bottom: 23px;
+  }
+  &__text {
+    width: 395px;
+  }
+  // rb
+  &__right_block {
+    position: relative;
+    height: 540px;
+  }
+  // list
+  &__list {
+  }
+  &__item {
+    width: fit-content;
+    height: fit-content;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &-bordered {
+      padding: 25px 24px;
+      border: 0.616471px solid rgba(255, 255, 255, 0.5);
+      border-radius: 14.7953px;
+    }
+    & {
+      img {
+        object-fit: contain;
+      }
+    }
+    // child
+    &:first-child {
+      left: 314px;
+      margin-bottom: 33px;
+      img {
+        width: 204px;
+        height: 100px;
+      }
+    }
+    // end
+    // child2
+    &:nth-child(2) {
+      left: 134px;
+      margin-bottom: 20px;
+      img {
+        width: 233px;
+        height: 45px;
+      }
+    }
+    // end
+    // child3
+    &:nth-child(3) {
+      position: absolute;
+      top: 249px;
+      left: 0px;
+      margin-bottom: 30px;
+      img {
+        width: 140px;
+        height: 63px;
+      }
+    }
+    // end
+    // child 4
+    &:nth-child(4) {
+      position: absolute;
+      top: 292px;
+      left: 256px;
+      margin-bottom: 0px;
+      img {
+        width: 147px;
+        height: 67px;
+      }
+    }
+    // end
+    // child 5
+    &:nth-child(5) {
+      position: absolute;
+      top: 182px;
+      left: 438px;
+      z-index: -1;
+      margin-bottom: 0px;
+      img {
+        width: 118px;
+        height: 133px;
+      }
+    }
+    // end
+    // child 6
+    &:nth-child(6) {
+      position: absolute;
+      top: 393px;
+      left: 183px;
+      z-index: -1;
+      margin-bottom: 0px;
+      img {
+        width: 155px;
+        height: 62px;
+      }
+    }
+    // end
+    // child 7
+    &:nth-child(7) {
+      position: absolute;
+      top: 466px;
+      left: 424px;
+      z-index: -1;
+      margin-bottom: 0px;
+      img {
+        width: 281px;
+        height: 56px;
+      }
+    }
+    // end
+  }
+}

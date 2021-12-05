@@ -1,0 +1,30 @@
+.download {
+    padding-bottom: 180px;
+    &__wrap {
+        justify-content: space-between
+    }
+    &__list {
+        display: flex;
+        &-m {
+            margin-right: 140px;
+        }
+    }
+    &__item {
+        margin-right: 28px;
+        &:first-child {
+            img {
+                width: 163px;
+                height: 51px;
+                object-fit: contain;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+            img {
+                width: 184px;
+                height: 51px;
+                object-fit: contain;
+            }
+        }
+    }
+}

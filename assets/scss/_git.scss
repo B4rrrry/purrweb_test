@@ -1,0 +1,177 @@
+$noto: "Noto Sans", sans-serif;
+$mt: "Montserrat", sans-serif;
+.git {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    opacity: 0.3;
+    filter: blur(80px);
+    right: -120px;
+    bottom: 234px;
+  }
+  padding-bottom: 56px;
+  // wrap
+  &__wrap {
+    flex-direction: column;
+  }
+  // info
+  &__info {
+    margin: 0 auto 82px;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+      opacity: 0.3;
+      filter: blur(80px);
+      left: -70px;
+      top: -60px;
+    }
+  }
+  &__title {
+    margin-bottom: 23px;
+    // h3
+    &-h3 {
+      font-family: $noto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: 0.03em;
+      margin-bottom: 32px;
+    }
+  }
+  &__text {
+    width: 580px;
+    text-align: center;
+  }
+  // form
+  &__form {
+    width: 818px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 91px;
+  }
+  // list
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  // item
+  &__item {
+    width: 100%;
+    margin-bottom: 23px;
+    display: flex;
+    // child
+    &:nth-child(3) {
+      .git__input-field {
+        width: 50%;
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  // input
+  &__input {
+    display: block;
+    height: 83px;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    font-family: $noto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #bfbfbf;
+    padding-left: 23px;
+    outline: none;
+    &::placeholder {
+      color: #bfbfbf;
+    }
+    &-error {
+      border: 2px solid #FF0000 !important;
+    }
+  }
+  // area
+  &__area {
+    display: block;
+    width: 100%;
+    height: 199px;
+    resize: none;
+    padding-top: 26px;
+    padding-left: 23px;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    font-family: $noto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #bfbfbf;
+    outline: none;
+    &::placeholder {
+      color: #bfbfbf;
+    }
+  }
+  // sub
+  &__sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 398px;
+    height: 80px;
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+  }
+  // download
+  &__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .download__item {
+      margin-right: 59px;
+      img {
+        width: 258px;
+        height: 82px;
+      }
+      &:last-child {
+        margin-right: 0;
+        img {
+          width: 292px;
+          height: 82px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.info {
+    padding-bottom: 236px;
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        width: 503px;
+        margin-right: 81px;
+        padding: 64px 73px 62px 55px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 21.3671px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 30px;
+        span {
+            display: block;
+        }
+    }
+    &__link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        text-decoration-line: underline;
+    }
+}

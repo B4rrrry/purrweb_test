@@ -1,0 +1,37 @@
+.vision {
+  position: relative;
+  height: 820px;
+  padding-bottom: 280px;
+  &__wrap {
+    position: relative;
+  }
+  &__img {
+    width: 790px;
+    position: absolute;
+    left: 0;
+  }
+  &__info {
+    position: absolute;
+    right: 100px;
+  }
+  &__title {
+    width: 358px;
+    margin-bottom: 23px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      background: #f101bf;
+      filter: blur(50px);
+      border-radius: 50%;
+      right: 60px;
+      z-index: -1;
+    }
+  }
+  &__text {
+    width: 315px;
+    position: relative;
+  }
+}

@@ -1,0 +1,12 @@
+.phone {
+    background-image: url('../img/phone/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 379px;
+    padding-bottom: 298px;
+    &__img {
+        width: 858px;
+        height: 428px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,52 @@
+.qr {
+   background-image: url("../img/qr/bg.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   padding-bottom: 40px;
+   // wrap
+   &__wrap {
+      position: relative;
+      padding-top: 207px;
+      display: flex;
+      align-items: center;
+   }
+   // name
+   &__name {
+      width: 138px;
+      height: 55px;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   // info
+   &__info {
+      width: fit-content;
+      margin-left: 80px;
+      margin-right: 80px;
+   }
+   &__title {
+      width: fit-content;
+      margin-bottom: 23px;
+   }
+   &__text {
+      width: 291px;
+      margin-bottom: 58px;
+   }
+   // list
+   &__list {
+      display: flex;
+   }
+   // item
+   &__item {
+      margin-right: 80px;
+      &:last-child {
+         margin-top: 339px;
+         margin-right: 0;
+      }
+   }
+   // img
+   &__img {
+      width: 332px;
+      height: 667px;
+   }
+}
