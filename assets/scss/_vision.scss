@@ -9,6 +9,9 @@
     width: 790px;
     position: absolute;
     left: 0;
+    &-mob {
+      display: none;
+    }
   }
   &__info {
     position: absolute;
