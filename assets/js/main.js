@@ -11,7 +11,10 @@ function cookiesInit() {
   });
 
   btn.addEventListener("click", function () {
-    document.body.removeChild(cks);
+    cks.style.bottom = '-100%';
+    setTimeout(() => {
+      document.body.removeChild(cks);
+    }, 1000);
   });
 }
 

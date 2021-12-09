@@ -17,6 +17,16 @@ $mt: "Montserrat", sans-serif;
     z-index: -1;
   }
   padding-bottom: 56px;
+  .link-hover {
+    padding: 2px;
+    &::after {
+      z-index: unset;
+      left: -100%;
+    }
+    &:before {
+      border:0;
+    }
+  }
   // wrap
   &__wrap {
     flex-direction: column;

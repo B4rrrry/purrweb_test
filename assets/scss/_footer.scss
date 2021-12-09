@@ -57,6 +57,24 @@ $av: "Avenir", sans-serif;
     font-size: 18px;
     line-height: 25px;
   }
+  // link 
+  &__link {
+    position: relative;
+    &:hover {
+      &::before {
+        width: 80%;
+      }
+    }
+    &::before {
+      content:"";
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition: all 1s ease;
+    }
+  }
   // item
   &__item {
     margin-bottom: 25px;

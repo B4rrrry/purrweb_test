@@ -3,7 +3,7 @@ $mt: "Montserrat", sans-serif;
 .header {
   padding-top: 23px;
   padding-bottom: 18px;
-  // wrap 
+  // wrap
   &__wrap {
     align-items: center;
   }
@@ -24,10 +24,20 @@ $mt: "Montserrat", sans-serif;
       align-items: center;
       font-weight: bold;
       font-size: 30px;
+      &:hover {
+        .logo__img {
+          animation: 10s ease 0s infinite alternate both running rotate;
+        }
+      }
+    }
+    &__text {
     }
   }
   // login
   .login {
+    &__wrap {
+    
+    }
     // img
     &__img {
       width: 26px;
@@ -41,6 +51,17 @@ $mt: "Montserrat", sans-serif;
       font-size: 18px;
       line-height: 25px;
       text-decoration-line: underline;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
     }
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

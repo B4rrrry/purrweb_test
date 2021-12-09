@@ -52,6 +52,52 @@ a {
     color: inherit;
   }
 }
+.link-hover {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 12px;
+  &:hover {
+    &::after {
+      animation: 4s ease 0s infinite alternate both running hoverLink;
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -200%;
+    width: calc(100% + 70px);
+    height: calc(100% + 10px);
+    background-color: rgba(96, 92, 234, 0.5);
+    transform: rotate(130deg);
+    z-index: -1;
+    
+  }
+  @keyframes hoverLink {
+    0% {
+    }
+    100% {
+      left: 120%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 12px;
+    border: 1px solid #fff;
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+}
 @import "./cookies";
 // specifications end
 @import "./header";

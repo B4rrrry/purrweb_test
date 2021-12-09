@@ -3,6 +3,9 @@
    background-size: 100%;
    background-repeat: no-repeat;
    padding-bottom: 40px;
+   &__bg {
+      display: none;
+   }
    // wrap
    &__wrap {
       position: relative;

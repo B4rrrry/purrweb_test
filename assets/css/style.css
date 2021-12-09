@@ -58,6 +58,55 @@ a:hover {
   color: inherit;
 }
 
+.link-hover {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.link-hover:hover::after {
+  animation: 4s ease 0s infinite alternate both running hoverLink;
+}
+
+.link-hover:hover::before {
+  opacity: 1;
+}
+
+.link-hover::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -200%;
+  width: calc(100% + 70px);
+  height: calc(100% + 10px);
+  background-color: rgba(96, 92, 234, 0.5);
+  transform: rotate(130deg);
+  z-index: -1;
+}
+
+@keyframes hoverLink {
+  0% {
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100%);
+  height: calc(100%);
+  border-radius: 12px;
+  border: 1px solid #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
 .cookies {
   width: 100%;
   background: #212834;
@@ -125,6 +174,10 @@ a:hover {
   font-size: 30px;
 }
 
+.header .logo__link:hover .logo__img {
+  animation: 10s ease 0s infinite alternate both running rotate;
+}
+
 .header .login__img {
   width: 26px;
   height: 25px;
@@ -137,6 +190,18 @@ a:hover {
   font-size: 18px;
   line-height: 25px;
   text-decoration-line: underline;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .offer {
@@ -224,6 +289,16 @@ a:hover {
   margin-right: 28px;
 }
 
+.download__item img {
+  transition: all 0.5s ease;
+}
+
+.download__item img:hover {
+  box-shadow: 0px 0px 8px 9px rgba(96, 92, 234, 0.5);
+  border-radius: 12px;
+  transform: scale(1.2);
+}
+
 .download__item:first-child img {
   width: 163px;
   height: 51px;
@@ -277,6 +352,7 @@ a:hover {
 }
 
 .info__link {
+  width: fit-content;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -504,6 +580,10 @@ a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 40px;
+}
+
+.qr__bg {
+  display: none;
 }
 
 .qr__wrap {
@@ -752,6 +832,19 @@ a:hover {
   z-index: -1;
 }
 
+.git .link-hover {
+  padding: 2px;
+}
+
+.git .link-hover::after {
+  z-index: unset;
+  left: -100%;
+}
+
+.git .link-hover:before {
+  border: 0;
+}
+
 .git__wrap {
   flex-direction: column;
 }
@@ -978,6 +1071,24 @@ a:hover {
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
+}
+
+.footer__link {
+  position: relative;
+}
+
+.footer__link:hover::before {
+  width: 80%;
+}
+
+.footer__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 1s ease;
 }
 
 .footer__item {
@@ -2952,6 +3063,7 @@ a:hover {
     top: 30px;
   }
   .qr__bg {
+    display: block;
     position: absolute;
     z-index: -1;
     left: 0;
